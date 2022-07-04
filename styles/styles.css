@@ -4,51 +4,43 @@ html {
 
 body {
   background-color: hsl(30, 38%, 92%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
   height: 100%;
+  display: flex;
 }
 
 main {
-  background-color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 90%;
+  background-color: white;
   border-radius: 10px;
-  object-fit: contain;
-}
-
-img {
-  max-width: 100%;
-  max-height: 100%;
 }
 
 h1 {
-  text-transform: uppercase;
-  font-size: 14px;
   font-family: Montserrat;
   font-weight: 500;
-  letter-spacing: 0.3em;
-  padding-top: 5%;
+  font-size: 13.5px;
   color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 h2 {
-  font-size: 32px;
   font-family: Fraunces;
+  font-weight: 700;
+  font-size: 32px;
   color: hsl(212, 21%, 14%);
-  margin-top: 0px;
+  width: 100%;
+  margin: 0px;
 }
-
 p {
   font-family: Montserrat;
+  font-weight: 500;
   font-size: 13.5px;
   color: hsl(228, 12%, 48%);
-  line-height: 1.75em;
-  margin-top: -10px;
+  line-height: 1.7em;
+  text-align: start;
 }
 
 span {
@@ -56,55 +48,44 @@ span {
 }
 
 button {
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 400;
-  color: white;
   background-color: hsl(158, 36%, 37%);
-  width: 90%;
-  height: 45px;
+  font-family: Montserrat;
+  font-size: 13.5px;
+  color: white;
   border: none;
+  height: 48px;
+  width: 100%;
   border-radius: 8px;
-  margin-top: 16px;
-  margin-bottom: 24px;
-  text-align: center;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 button:active {
   background-color: hsl(158, 32%, 25%);
 }
 
-.text {
-  width: 90%;
-}
-
 .price {
+  width: 100%;
   margin-top: 30px;
-  width: 90%;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  gap: 8%;
-}
-
-.after {
-  font-family: Fraunces;
-  font-size: 30px;
-  color: hsl(158, 36%, 37%);
+  gap: 25px;
 }
 
 .before {
   font-family: Montserrat;
-  font-size: 12px;
+  font-size: 13.5px;
   text-decoration: line-through;
   color: hsl(228, 12%, 48%);
 }
 
-.button-img {
-  padding-right: 10px;
+.after {
+  font-family: Fraunces;
+  font-size: 32px;
+  color: hsl(158, 36%, 37%);
 }
 
 .mobile,
@@ -115,33 +96,114 @@ button:active {
 @media only screen and (max-width: 375px) {
   .mobile {
     display: block;
-  }
-
-  img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    width: 100%;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+  }
+
+  button {
+    margin-top: 15px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    width: 88%;
+    margin-top: 15px;
+    margin-bottom: 15 px;
+    height: 100%;
   }
 }
 
 @media only screen and (min-width: 376px) and (max-width: 1440px) {
   .desktop {
     display: block;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   main {
-    background-color: white;
+    max-height: 60%;
+    max-width: 45%;
+    min-height: 524px;
+    min-width: 662px;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .card {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    flex-direction: row;
-    width: 90%;
-    border-radius: 10px;
-    object-fit: contain;
+    justify-content: space-between;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 25px;
   }
 }
 
 @media only screen and (min-width: 1441px) {
   .desktop {
     display: block;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    max-height: 60%;
+    max-width: 45%;
+    min-height: 524px;
+    min-width: 662px;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 25px;
   }
 }
