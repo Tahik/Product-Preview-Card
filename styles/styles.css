@@ -134,7 +134,7 @@ button:active {
     display: block;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    max-width: 331px;
+    width: 50%;
   }
 
   body {
@@ -144,12 +144,8 @@ button:active {
   }
 
   main {
-    /* max-height: 60%;
-    max-width: 45%;
-    min-height: 524px;
-    min-width: 662px; */
-    width: 662px;
-    height: 524px;
+    width: 620px;
+    height: 480px;
   }
 
   h1 {
@@ -177,7 +173,7 @@ button:active {
     display: block;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    max-width: 331px;
+    width: 50%;
   }
   body {
     flex-direction: column;
@@ -186,12 +182,8 @@ button:active {
   }
 
   main {
-    /* max-height: 60%;
-    max-width: 45%;
-    min-height: 524px;
-    min-width: 662px; */
-    width: 662px;
-    height: 524px;
+    width: 620px;
+    height: 480px;
   }
 
   h1 {
