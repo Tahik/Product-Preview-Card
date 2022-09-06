@@ -39,7 +39,12 @@ Users should be able to:
 
 ### Useful resources
 
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flexbox-tricks - this page helped me with basic understandign of flexbox
+<<<<<<< HEAD
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flexbox-tricks - this page helped me with basic understanding of flexbox
+=======
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flexbox-tricks - this page helped me with basic understanding of flexbox
+
+> > > > > > > d7edb0adc78fd4baffb76dbc255066f099638f3e
 
 ## Author
 
